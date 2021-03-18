@@ -1,0 +1,64 @@
+#navigation {
+    position: fixed;
+    transform: translateY(-120%);
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    width: 100vw;
+    height: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: rgba(#9ea180, 0.1);
+
+    backdrop-filter: blur(10px);
+    animation: animate-nav 0.5s linear 3.5s forwards;
+    
+    & a {
+        color: $dark-grey;
+    }
+}
+
+.navigation {
+    &__contact, &__projects, &__about {
+        font-size: 1.5rem;
+        margin-left: 2rem;
+
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        $nav-item-color: lighten(#1C0B19, 40%);
+        
+        svg {
+            fill: $secondary-color;
+            fill: $nav-item-color;
+            height: 3rem;
+            width: 3rem; 
+            margin-right: 1rem;
+        } 
+        span {
+            color:  $nav-item-color;
+        }  
+        &:hover {
+            text-decoration: none;
+            svg {
+                fill: lighten($nav-item-color, 20%);
+            }
+            span {
+                color: lighten($nav-item-color, 20%);
+            }
+
+        }
+        @include respond(tab-port) {
+            span {
+                display: none;
+            }
+        }
+
+    }
+}
+
+@keyframes animate-nav {
+    0% {transform: translateY(-120%);}
+    100% { transform: translateY(0%);}
+}

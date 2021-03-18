@@ -1,0 +1,16 @@
+// Section
+section {
+  padding: 5rem 0rem;
+  position: relative;
+
+  & .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  @include respond(phone) {
+    border: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

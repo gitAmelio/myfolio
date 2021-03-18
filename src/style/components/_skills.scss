@@ -1,0 +1,15 @@
+.skill {
+  background-color: red;
+  -webkit-mask: url(/src/assets/skills/cplusplus-original.svg) no-repeat center;
+  mask: url(/src/assets/skills/cplusplus-original.svg) no-repeat center;
+}
+
+#svg-object, figure img {
+    height: 4rem;
+}
+.tech {
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  margin: 3rem auto;
+}

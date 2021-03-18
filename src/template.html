@@ -1,0 +1,324 @@
+<!--
+  Hello!
+  -
+  Simplefolio is a clean and responsive portfolio template for Developers!
+  Created by Jacobo Martinez.
+  -
+  Github Repo: https://github.com/cobidev/simplefolio/
+  Readme: https://github.com/cobidev/simplefolio/README.md
+  -
+  For business & inquires, contact me -> jacobojavier98@gmail.com
+-->
+<!DOCTYPE  html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/png" href="./assets/favicon.png" />
+
+    <!-- Put here your site title -->
+    <title>Amelio Croza | Web Developer</title>
+    <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
+    <meta name="keywords" content="Melo, Amelio, skill" />
+    <!-- Improve your SEO by adding a small descrption of you -->
+    <meta name="description" content="Amelio Croza | Web Developer" />
+
+    <!-- Required librarys -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+    <script>
+      // ScrollReveal({ reset: false });
+
+    </script>
+
+    <!-- Remove this script once you setup your custom portfolio -->
+    <!-- <script async defer src="https://buttons.github.io/buttons.js"></script> -->
+    <style>
+        /* .js-loading *:not(#loading, #spinner, #particles-js), */
+        .js-loading *:not(#loading, #spinner, #particles-js ~ *),
+        .js-loading *:before,
+        .js-loading *:after {
+          display: none;
+          animation-play-state: paused !important;
+        }
+    </style>
+  </head>
+
+  <!-- Follow the HTML instructions to create your stunning portfolio website -->
+  <body class="js-loading">
+    <script>
+      document.body.classList.add('js-loading');
+
+      window.addEventListener("load", showPage);
+
+      function showPage() {
+        document.body.classList.remove('js-loading');
+        setTimeout(()=>{
+          const event = new Event('resize');
+          window.dispatchEvent(event);
+        })
+      }
+    </script>
+    <div id="loading" class="" >
+      <div id="spinner"></div>
+    </div>
+    
+    <!-- **** Hero Section **** -->
+    <nav id="navigation" >
+      <a href="#hero-container" class="navigation__about">                
+        <svg class="navigation__icon">
+           <use xlink:href="assets/icons.svg#icon-home"></use>
+        </svg>
+        <span>home</span>
+      </a>
+      <a href="#about" class="navigation__about">                
+        <svg class="navigation__icon">
+           <use xlink:href="assets/icons.svg#icon-info"></use>
+        </svg>
+        <span>about</span>
+      </a>
+      <a href="#projects" class="navigation__projects">
+        <svg class="navigation__icon">
+          <use xlink:href="assets/icons.svg#icon-code"></use>
+       </svg>
+       <span>projects</span>
+      </a>
+      <a href="#contact" class="navigation__contact">
+        <svg class="navigation__icon">
+          <use xlink:href="assets/icons.svg#icon-email"></use>
+       </svg>
+       <span>contact</span>
+      </a>
+    </nav>
+      <div id="hero-container" style="margin:0; width:100vw; height:100vh; background: linear-gradient(to left, #060205, #060205);">
+      <div id="fullname"></div>
+      <!-- <div id="hero" class="jumbotron"> -->
+       <h2 class="job-title" contenteditable="true">
+        <span id="job-title--1" contenteditable="true">Full Stack Developer</span>
+        <span id="job-title--2" contenteditable="true">Front-End Developer</span>
+        <span id="job-title--3" contenteditable="true">Back-End Developer</span>
+        <span id="job-title--4" contenteditable="true">React/Redux Developer</span>
+       </h2>
+      <div id="hero" style="transform:translateX(-200%)">
+        <div class="container">
+          <!-- <h1 class="hero-title" class="load-hidden">
+            Hi, my name is <span class="text-color-main">Amelio Croza</span>
+            <br />
+            I'm the Unknown Developer.
+          </h1>
+          <p class="hero-cta" class="load-hidden">
+            <a class="cta-btn cta-btn--hero" href="#about">Know more</a>
+          </p> -->
+
+        </div>
+      </div>
+    </div>
+
+    <!-- /END Hero Section -->
+
+    <!-- **** About Section **** -->
+    <section id="about">
+      <div class="container">
+        <div id="about-header" class="about-header header">
+           <h2 class="section-title letter">A</h2>
+           <h2 class="section-title letter">b</h2>
+           <h2 class="section-title letter">o</h2>
+           <h2 class="section-title letter">u</h2>
+           <h2 class="section-title letter">t</h2>
+           <h2 class="section-title letter space"></h2>
+           <h2 class="section-title letter">m</h2>
+           <h2 class="section-title letter">e</h2>
+        </div>
+        <div class="row about-wrapper">
+          <div id="about--left" class="skill-sphere col-md-6 col-sm-12 left-info">
+            <!-- <div class="about-wrapper__image">
+              <img
+                class="img-fluid rounded shadow-lg"
+                height="auto"
+                width="300px"
+                src="./assets/profile.jpg"
+                alt="Profile Image"
+              />
+            </div> -->
+          </div>
+          <div id="about--right" class="col-md-6 col-sm-12 right-info">
+            <div class="about-wrapper__info">
+              <p class="about-wrapper__info-text">
+                I've been developing and constructing test equipment from scratch for over a decade. And with some of these builds requires fw and application software. Making stuff materialize is just awesome.
+              <p class="about-wrapper__info-text">If electronics is the yin, then Web Development is the yang.</p>
+              <p class="about-wrapper__info-text">My journey started with Ruby on Rails and all the "railsiness" that came with it. And before I knew it, I was writing C bindings.<p>
+              <p class="about-wrapper__info-text">JQuery was ok, but the word was there a much better tool, React. The React/Redux path took me to Advanced JS. And in turn, lead me to Functional Programming. Just love it</p>
+              <!-- <span class="d-flex mt-3">
+                <a target="_blank" class="cta-btn cta-btn--resume" href="#!">
+                  View Resume
+                </a>
+              </span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END About Section -->
+
+    <!-- **** Projects Section **** -->
+    <section id="projects">
+      <div class="container">
+        <div class="project-wrapper">
+          <div id="project-header" class="project-header header">
+            <h2 class="section-title letter">P</h2>
+            <h2 class="section-title letter">r</h2>
+            <h2 class="section-title letter">o</h2>
+            <h2 class="section-title letter">j</h2>
+            <h2 class="section-title letter">e</h2>
+            <h2 class="section-title letter">c</h2>
+            <h2 class="section-title letter">t</h2>
+            <h2 class="section-title letter">s</h2>
+         </div>
+
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div id="project1--left" class="col-lg-4 col-sm-12 project-left--1"> 
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">React-Algo</h3>
+                <div>
+                  <p class="mb-4">
+                    React-Algo is an attempt to visualize data structures and algorithms with React, Redux and D3.
+                  </p>
+                </div>
+                <div class="tech">
+                  <figure><img src="assets/skills/react-original.svg" alt="html5"></figure>
+                  <figure><img src="assets/skills/redux-original.svg" alt="html5"></figure>
+                  <figure><img src="assets/skills/d3js-original.svg" alt="html5"></figure>
+                  <figure><img src="assets/skills/html5-original.svg" alt="html5"></figure>
+                  <figure><img src="assets/skills/css3-original.svg" alt="html5"></figure>
+                  <figure><img src="assets/skills/javascript-original.svg" alt="html5"></figure>
+                </div>
+                <a target="_blank" class="cta-btn cta-btn--hero" href="#!">
+                  See Live
+                </a>
+                <a target="_blank" class="cta-btn text-color-main" href="#!">
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div id="project1--right" class="col-lg-8 col-sm-12  project-right--1">
+              <div class="project-wrapper__image">
+                <a href="#!" target="_blank">
+                  <!-- <div data-tilt class="thumbnail rounded">
+                    <img class="img-fluid" src="./assets/react-algo.png" />
+                  </div> -->
+                  <div data-tilt class="thumbnail rounded react-algo-logo">
+                    <img class="img-fluid" src="./assets/logo_react-algo.png" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div id="project2--left" class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Natours</h3>
+                <div>
+                  <p class="mb-4">
+                    A fictional touring company that promise life-changing experiences to their clients.
+                    The Natours website was developed mainly with SASS and a few lines of JavaScript.
+                  </p>
+                </div>
+                <div class="tech">
+                  <figure><img src="assets/skills/sass-original.svg" alt="html5"></figure>
+                  <figure><img src="assets/skills/html5-original.svg" alt="html5"></figure>
+                  <figure><img src="assets/skills/css3-original.svg" alt="html5"></figure>
+                  <figure><img src="assets/skills/javascript-original.svg" alt="html5"></figure>
+                </div>
+                <a target="_blank" class="cta-btn cta-btn--hero" href="#!">
+                  See Live
+                </a>
+                <a target="_blank" class="cta-btn text-color-main" href="#!">
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div id="project2--right" class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a href="#!" target="_blank">
+                  <div data-tilt class="thumbnail rounded natours-logo">
+                    <img class="img-fluid" src="./assets/logo_natours.png" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+        </div>
+      </div>
+    </section>
+    <!-- /END Projects Section -->
+
+    <!-- **** Contact Section **** -->
+    <section id="contact">
+      <div class="container">
+        <div id="contact-header" class="contact-header header">
+          <h2 class="section-title letter">C</h2>
+          <h2 class="section-title letter">o</h2>
+          <h2 class="section-title letter">n</h2>
+          <h2 class="section-title letter">t</h2>
+          <h2 class="section-title letter">a</h2>
+          <h2 class="section-title letter">c</h2>
+          <h2 class="section-title letter">t</h2>
+          <h2 class="section-title letter">s</h2>
+       </div>
+        
+        <div class="contact-wrapper">
+          <p class="contact-wrapper__text">
+            You got this.
+          </p>
+          <a
+            target="_blank"
+            class="cta-btn cta-btn--resume"
+            href="mailto:ameliosconnection@gmail.com"
+            >Let's make it happen</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- /END Contact Section -->
+
+    <!-- **** Footer Section **** -->
+    <footer class="footer navbar-static-bottom">
+      <div class="container">
+        <a href="#hero-container" class="back-to-top">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+        <div class="social-links">
+          <a href="https://twitter.com/Amelio70718644" target="_blank">
+            <i class="fa fa-twitter fa-inverse"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/amelio-croza-b7b5b0209/" target="_blank">
+            <i class="fa fa-linkedin fa-inverse"></i>
+          </a>
+          <a href="https://github.com/gitAmelio" target="_blank">
+            <i class="fa fa-github fa-inverse"></i>
+          </a>
+        </div>
+
+        <hr />
+
+        <!-- If you give me some credit, will be huge for me :) -->
+        <p class="footer__text">
+          © 2021 - Developed by <a href=https://github.com/gitAmelio target="_blank">Amelio Croza</a>
+        </p>
+        <p class="footer__text">Template forked from <a href="https://github.com/cobidev" target="_blank">Jacobo Martínez</a></p>
+      </div>
+    </footer>
+    <!-- /END Footer Section -->
+    <div id="particles-js"></div>
+
+  </body>
+</html>
