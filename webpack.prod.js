@@ -9,6 +9,12 @@ const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = merge(common, {
   mode: 'production',
+  performance: {
+    hints: false,
+    maxEntrypointSize: 512000,
+    maxAssetSize: 512000
+  },
+  devtool: 'source-map',
   output: {
     filename: '[name].[contentHash].bundle.js',
     path: path.resolve(__dirname, 'dist')
