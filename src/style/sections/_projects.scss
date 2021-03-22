@@ -11,6 +11,7 @@
 
   .project-wrapper {
     margin-bottom: 15rem;
+        
 
     @include respond(phone) {
       margin-bottom: 0rem;
@@ -53,6 +54,7 @@
     &__image {
       width: 90%;
       margin: 0 auto;
+      position: relative;
 
       @include respond(tab-land) {
         width: 100%;
@@ -63,26 +65,48 @@
         & img {height: 65vh}
       }
 
-      & .react-algo-logo {
-        background: linear-gradient(
-          to left,
-          rgba(0,0,0,1),
-          rgba(0, 0, 0, 0.85)),
-          url(/src/assets/react-algo.png) no-repeat center center;
-        background-size: cover;  
+
+      & figure {
+        position: absolute;
+        top: 0;
+        left: 0; 
+        bottom: 0;
+        right: 0;
+        width: 50vw;
+        height: 100%;
+        background: linear-gradient(45deg, black, transparent);
+
+        & img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          filter: opacity(0.08);
+        }
       }
 
-      & .natours-logo {
-        background: linear-gradient(
-          to left,
-          rgba(255, 255, 255, 0.7),
-          rgba(255, 255, 255, 0.2)),
-          url(/src/assets/natours.jpg) no-repeat center center; 
-        background-size: cover;  
+      // & .react-algo-logo {
+      //   background: linear-gradient(
+      //     to left,
+      //     rgba(0,0,0,1),
+      //     rgba(0, 0, 0, 0.85)),
+      //     url(/src/assets/reactalgo.png) no-repeat center center;
+      //   background-size: cover;  
+      // }
+
+      // & .natours-logo {
+      //   background: linear-gradient(
+      //     to left,
+      //     rgba(255, 255, 255, 0.7),
+      //     rgba(255, 255, 255, 0.2)),
+      //     url(/src/assets/natours.jpg) no-repeat center center; 
+      //   background-size: cover;  
         
-      }
+      // }
 
       & .thumbnail {
+        transition: all 1s;
+        overflow: hidden;
+        width: 50vw;
         border: none;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
         transition: all 0.2s ease-out;
@@ -96,7 +120,30 @@
           box-shadow: none;
           margin-bottom: 3.2rem;
         }
+
+        & .img-fluid {
+          filter: contrast(0);
+        }
+        &:hover {
+          background:#361530;
+        }
       }
     }
   }
 }
+
+
+// I'm an Advanced JavaScript devleoper who loves Functional Programmning. I've been coding for more than 10 years and have a deep undestanding of React and Redux.
+
+// Done extensive development with Ruby on Rails, MySql, ElasticSearch and ruby C++ bindings
+
+// Node, Express and Python I have only touched on through courses.
+
+// Some of the course I have done:
+//     "Advanced JavaScript Concepts" 
+//     "JavaScript Understanding the Weird Parts"
+//     "Functional Programming"
+//     "Modern React with Redux"
+//     "Advanced React and Redux"
+//     "Advanced CSS and Sass Flexbox, Grid, Animations and More!" 
+//     "CSS - The Complete Guide 2020"

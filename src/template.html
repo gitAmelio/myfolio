@@ -38,13 +38,14 @@
     <!-- Remove this script once you setup your custom portfolio -->
     <!-- <script async defer src="https://buttons.github.io/buttons.js"></script> -->
     <style>
-        /* .js-loading *:not(#loading, #spinner, #particles-js), */
+    
         .js-loading *:not(#loading, #spinner, #particles-js ~ *),
         .js-loading *:before,
         .js-loading *:after {
           display: none;
           animation-play-state: paused !important;
         }
+        
     </style>
   </head>
 
@@ -105,6 +106,16 @@
        </h2>
       <div id="hero" style="transform:translateX(-200%)">
         <div class="container">
+          <!-- /src/assets/photo-hero.jpg -->
+          <figure>
+              <img id="hero-image"
+              class=""
+              src="./assets/photo-hero.jpg"
+              alt="Hero Image"
+            />
+
+          </figure>
+
           <!-- <h1 class="hero-title" class="load-hidden">
             Hi, my name is <span class="text-color-main">Amelio Croza</span>
             <br />
@@ -135,26 +146,14 @@
         </div>
         <div class="row about-wrapper">
           <div id="about--left" class="skill-sphere col-md-6 col-sm-12 left-info">
-            <!-- <div class="about-wrapper__image">
-              <img
-                class="img-fluid rounded shadow-lg"
-                height="auto"
-                width="300px"
-                src="./assets/profile.jpg"
-                alt="Profile Image"
-              />
-            </div> -->
           </div>
           <div id="about--right" class="col-md-6 col-sm-12 right-info">
             <div class="about-wrapper__info">
               <p class="about-wrapper__info-text">
-                When I was introduced to Ruby on Rails just about 10 years back, I just could not get enough of web development. All my free time got sucked into it. I just wanted to know more. But CSS and Javascript came across as fuzzy.
-              <p class="about-wrapper__info-text">Knowledge of anything is ok. Understanding how it works is paramount. It enables me to put things together if it happens to falls apart, makes knew parts or simply remove them. Knowledge and understanding are like data and information. 
-                Finding quality learning sources is not easy, at least for me. There had to be standards that would apply these languages in a formulaic way. And having a C and C++ background did not help. </p>
-              <p class="about-wrapper__info-text">With courses like "Advanced JavaScript Concepts" and "JavaScript Understanding the Weird Parts", finally there was clarity. And this leads to "Functional Programming". And in turn, lead to "Modern React with Redux" and "Advanced React and Redux".<p>
-              <p class="about-wrapper__info-text">"Advanced CSS and Sass Flexbox, Grid, Animations and More!" and "CSS - The Complete Guide 2020" erased the fuzziness of CSS.</p>
-              <p class="about-wrapper__info-text">And because there is always something new ahead, how can you not love?</p>
-              <!-- <span class="d-flex mt-3">
+                I'm an Advanced JavaScript developer who loves Functional Programming. I've been coding for more than 10 years and have a deep understanding of React and Redux.
+              <p class="about-wrapper__info-text">Done extensive development with Ruby on Rails, MySql, ElasticSearch and ruby C++ bindings.</p>
+              <p class="about-wrapper__info-text">Node, Express and Python I have only touched on through courses.<p>
+   <!-- <span class="d-flex mt-3">
                 <a target="_blank" class="cta-btn cta-btn--resume" href="#!">
                   View Resume
                 </a>
@@ -209,12 +208,16 @@
             </div>
             <div id="project1--right" class="col-lg-8 col-sm-12  project-right--1">
               <div class="project-wrapper__image">
+   
                 <a href="https://gitAmelio.github.io/react-algo" target="_blank">
-                  <!-- <div data-tilt class="thumbnail rounded">
-                    <img class="img-fluid" src="./assets/react-algo.png" />
-                  </div> -->
                   <div data-tilt class="thumbnail rounded react-algo-logo">
-                    <!-- <img class="img-fluid" src="./assets/logo_react-algo.png" /> -->
+                    <figure>
+                      <img 
+                        class=""
+                        src="./assets/reactalgo.png"
+                        alt="Hero Image"
+                      />
+                    </figure> 
                     <img class="img-fluid" src="./assets/logo_react-algo.png" />
                   </div>
                 </a>
@@ -252,6 +255,13 @@
               <div class="project-wrapper__image">
                 <a href="#!" target="_blank">
                   <div data-tilt class="thumbnail rounded natours-logo">
+                    <figure>
+                      <img 
+                        class=""
+                        src="./assets/natours.jpg"
+                        alt="Hero Image"
+                      />
+                  </figure>  
                     <img class="img-fluid" src="./assets/logo_natours.png" />
                   </div>
                 </a>

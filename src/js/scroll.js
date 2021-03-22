@@ -9,9 +9,11 @@ const zoomBackground = (selector) => {
     const {style} = element 
     if ((width >= 900)){
         if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-            element.style.backgroundSize = "150% auto";
+            // element.style.backgroundSize = "150% auto";
+            element.style.transform = "scale(1.6)";
           }else{
-            element.style.backgroundSize = "110% auto";        
+            // element.style.backgroundSize = "110% auto";        
+            element.style.transform = "scale(1)";        
         }
     }
 }
@@ -22,7 +24,8 @@ function scrollTop(selector){
 
 export const scroll = () => {
     window.onscroll = function () {
-      scrollTop('#hero')
+    //   scrollTop('#hero')
+      scrollTop('#hero-image')
     };
 }
 

@@ -14,6 +14,7 @@
 }
 
 #hero {
+  
   height: 10%;
   width: 80%;
   transform: translateX(-200%);
@@ -30,6 +31,7 @@
   bottom: 0;
   right: 0;
   z-index: -1;
+  overflow: hidden;
   
 
   // If you want to set a background image on the hero section, uncomment these with yout custom image
@@ -37,9 +39,9 @@
   background: linear-gradient(
                                 0deg,
                                 rgba($primary-dark,1),
-                                rgba($primary-dark, 0.5)),
-                                url(/src/assets/photo-hero.jpg
-                              ) center center fixed;
+                                rgba($primary-dark, 0.5));//,
+                              //   url(/src/assets/photo-hero.jpg
+                              // ) center center fixed;
   
   background-repeat: no-repeat;
   transition: all 1s;
@@ -92,29 +94,43 @@
   animation: hero-slider 3s ease-in-out forwards 1s;
 }
 
+#hero .container {
+  overflow: hidden;
+  position: relative;
+  
+  & figure img {
+    opacity: 0.2;
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 80vh;
+    transition: all 1s;
+  }
+}
+
 @keyframes hero-slider {
   0% {
     display: flex;
     height: 1%;
-    width: 100%;
+    width: 100vw;
     transform: translateX(-200%);
   }
   50% {
     display: flex;
     height: 1%;
-    width: 100%;
+    width: 100vw;
     transform: translateX(0%);
   }
   80% {
     display: flex;
     height: 80%;
-    width: 100%;
+    width: 100vw;
     transform: translateX(0%);
   }
   100% {
     display: flex;
     height: 80%;
-    width: 90%;
+    width: 90vw;
     transform: translateX(0%);
   }
 }
