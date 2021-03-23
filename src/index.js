@@ -54,7 +54,7 @@ skillSphere([
         radius: 200
     }
 )
-jobTitleStepper(4);
+jobTitleStepper(5);
 lettersEvent()
 loadSectionScrollTrigger('about')
 loadSectionScrollTrigger('project1')
