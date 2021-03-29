@@ -33,6 +33,9 @@
         @include respond(phone){
             transform: translate(-120px, 13px);
         }
+        @include respond(tab-port-sm){
+            transform: translate(-50px, -13px) !important; 
+        }
     }
     & #croza-svg {
         @include respond(tab-land){
@@ -47,6 +50,11 @@
         @include respond(phone){
             transform: translate(120px, -13px) !important; 
         }
+        @include respond(tab-port-sm){
+            transform: translate(80px, -13px) !important; 
+        }
+
+
     }
 }
 path {
