@@ -14,9 +14,16 @@ h2.job-title {
 
     @include respond(tab-port){
         font-size: 3rem;
+        line-height: 3rem;
+        -webkit-box-reflect: below 1px linear-gradient(transparent, #00000029);
+        padding: 0 8rem;
     }
     @include respond(tab-port-sm){
-        font-size: 1.7rem;
+        // font-size: 1.7rem;
+        font-size: 3rem;
+        line-height: 3rem;
+        -webkit-box-reflect: below 1px linear-gradient(transparent, #00000029);
+        padding: 0 12rem;
     }
     
 }

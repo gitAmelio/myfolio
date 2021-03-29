@@ -1,6 +1,7 @@
 #hero-container {
     min-height: 100vh;
     height: 100vh;
+    width: 100vh;
 
     display: flex;
     position: relative;
@@ -98,46 +99,58 @@
   overflow: hidden;
   position: relative;
   
-  & figure img {
-    opacity: 0.2;
-    object-fit: cover;
-    display: block;
-    width: 100%;
-    height: 80vh;
-    transition: all 1s;
+  & figure {
+    margin: 0;
+
+      & img {
+      opacity: 0.2;
+      object-fit: cover;
+      display: block;
+      width: 100%;
+      height: 80vh;
+      transition: all 1s;
+    }
+  }
+  @include respond(tab-land-sm){
+    width: 100vw;
   }
 }
 
 @keyframes hero-slider {
   0% {
-    display: flex;
+    // display: flex;
     height: 1%;
     width: 100vw;
+    width: 100%;
     transform: translateX(-200%);
   }
   50% {
-    display: flex;
+    // display: flex;
     height: 1%;
     width: 100vw;
-    transform: translateX(0%);
-  }
-  80% {
-    display: flex;
-    height: 80%;
-    width: 100vw;
-    transform: translateX(0%);
-  }
-  100% {
-    display: flex;
-    height: 80%;
-    width: 90vw;
-    transform: translateX(0%);
-  }
-}
-@keyframes hero-slider2 {
-  100% {
-    height: 80%;
     width: 100%;
     transform: translateX(0%);
   }
+  80% {
+    // display: flex;
+    height: 80%;
+    width: 100vw;
+    width: 100%;
+    transform: translateX(0%);
+  }
+  100% {
+    // display: flex;
+    height: 80%;
+    // width: 90vw;
+    // width: 100vw;
+    width: 95%;
+    transform: translateX(0%);
+  }
 }
+// @keyframes hero-slider2 {
+//   100% {
+//     height: 80%;
+//     width: 100%;
+//     transform: translateX(0%);
+//   }
+// }

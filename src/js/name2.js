@@ -81,7 +81,7 @@ export const amelioSvg =
 `
 export const crozaSvg = 
 `
-<svg  id="croza-svg" class="name-svg" style="height: 119px; width: 261px; transform: translate(10px, 13px)">
+<svg  id="croza-svg" class="name-svg" style="height: 119px; transform: translate(10px, 13px)">
     <g
     style="font-size:133.244px;line-height:1.25;font-family:'Monday Routines';-inkscape-font-specification:'Monday Routines, Normal';letter-spacing:0px;stroke-width:1.99866;transform: translate(0px, -97px);"
     id="text152-7"

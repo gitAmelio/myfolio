@@ -19,11 +19,15 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
       @content;
     } //0 - 320px
   }
-  // Phone
   @if $breakpoint == phone {
     @media (max-width: 37.5em) {
       @content;
     } //0 - 600px
+  }
+  @if $breakpoint == tab-port-xs {
+    @media (max-width: 40em) {
+      @content;
+    } //0 - 640px
   }
   // Table small
   @if $breakpoint == tab-port-sm {

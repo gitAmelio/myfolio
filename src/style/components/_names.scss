@@ -6,14 +6,47 @@
     position: absolute;
     transform: scale(1.4);
     margin-bottom: 10rem;
+    @include respond(tab-land){
+        transform: scale(1.1);
+       
+    }
     @include respond(tab-port){
-        transform: scale(1.2);
+        transform: scale(1.0);
     }
     @include respond(tab-port-sm){
         transform: scale(.8);
     }
     @include respond(phone){
-        transform: scale(.4)
+        transform: scale(.7)
+    }
+  
+    & #amelio-svg {
+        @include respond(tab-land){
+            // transform: translate(-10px, 13px);
+            transform: translate(46px, -81px);
+        }
+        @include respond(tab-port-xs){
+            
+            transform: translate(-90px, -20px) !important;
+
+        }
+        @include respond(phone){
+            transform: translate(-120px, 13px);
+        }
+    }
+    & #croza-svg {
+        @include respond(tab-land){
+            // transform: translate(10px, 13px) !important; 
+            transform: translate(-26px, 13px) !important;
+        }
+        @include respond(tab-port-xs){
+            
+            transform: translate(120px, -20px) !important;
+
+        }
+        @include respond(phone){
+            transform: translate(120px, -13px) !important; 
+        }
     }
 }
 path {
