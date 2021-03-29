@@ -23,18 +23,20 @@
     & #amelio-svg {
         @include respond(tab-land){
             // transform: translate(-10px, 13px);
-            transform: translate(46px, -81px);
+            transform: translate(46px, -81px) !important;
+        }
+        @include respond(tab-port-sm){
+            // transform: translate(-50px, -13px) !important; 
+            transform: translate(90px, -110px) !important;
         }
         @include respond(tab-port-xs){
             
             transform: translate(-90px, -20px) !important;
-
+            
         }
         @include respond(phone){
-            transform: translate(-120px, 13px);
-        }
-        @include respond(tab-port-sm){
-            transform: translate(-50px, -13px) !important; 
+            // transform: translate(-120px, 13px) !important;
+            transform: translate(-30px, 13px) !important
         }
     }
     & #croza-svg {
@@ -42,16 +44,19 @@
             // transform: translate(10px, 13px) !important; 
             transform: translate(-26px, 13px) !important;
         }
+        @include respond(tab-port-sm){
+            // transform: translate(80px, -13px) !important; 
+            transform: translate(-90px, -13px) !important;
+        }
         @include respond(tab-port-xs){
             
             transform: translate(120px, -20px) !important;
 
         }
         @include respond(phone){
-            transform: translate(120px, -13px) !important; 
-        }
-        @include respond(tab-port-sm){
-            transform: translate(80px, -13px) !important; 
+            // transform: translate(120px, -13px) !important; 
+            transform: translate(90px, -13px) !important;
+
         }
 
 
