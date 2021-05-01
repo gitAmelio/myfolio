@@ -55,7 +55,6 @@ skillSphere([
     }
 )
 jobTitleStepper(5);
-lettersEvent()
 loadSectionScrollTrigger('about')
 loadSectionScrollTrigger('project1')
 loadSectionScrollTrigger('project2')
